@@ -1,0 +1,193 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Dancing+Script&family=Montserrat:wght@400;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body{
+
+    font-size: 1.6rem;
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+    background: linear-gradient(45deg, #190361, #bb00ff);
+	animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+             
+    
+}
+
+
+
+
+
+.cookie, 
+.brokenCookie {
+    width: 42.8rem;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+
+    text-align: center;
+
+    
+
+}
+
+.cookie{
+    padding: 4.8rem 6.4rem 6.4rem;  
+}
+
+
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+
+    color: #34355B;
+
+    margin-bottom: 1.4rem;
+}
+
+.cookie h1 {
+    margin-bottom: 1.4rem;
+}
+
+.cookie p{
+
+    
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+    color: #34355B;
+
+    margin-bottom: 2rem;
+}
+
+.img{
+  width: 30rem;
+  height: 20rem;
+
+
+}
+
+.btnCookie{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    
+}
+
+.btnCookie:hover img{
+    animation: shake 0.5s infinite;
+}
+
+
+.brokenCookie{
+    padding: 4.8rem 6.4rem;
+
+    display: grid;
+    place-items: center;
+    gap: 1.7rem;
+}
+
+.hide{
+    display: none;
+}
+
+
+#cookie-message{
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+
+    width: 100%;
+    padding: 1rem;
+
+    
+
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+
+    color: #000000;
+
+    animation: move 2s ease;
+
+    
+}
+
+.otherCookie{
+   
+    width: 17.4rem;
+    height: 5.2rem;
+
+    background: #FF9500;
+    border-radius: 4px;
+    border: #FFA633; 
+
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+    color: #FFFFFF;
+
+    
+
+}
+
+.otherCookie:hover{
+    background-color: #FFA633;
+}
+
+
+@keyframes shake {
+    0% { transform: translate(0px, 0px) rotate(0deg); }
+    10% { transform: translate(-5px, 0px) rotate(-5deg); }
+    20% { transform: translate(0px, 0px) rotate(0deg); }
+    30% { transform: translate(5px, 0px) rotate(5deg); }
+    40% { transform: translate(0px, 0px) rotate(0deg); }
+    50% { transform: translate(-5px, -5px) rotate(-5deg); }
+    60% { transform: translate(0px, 0px) rotate(0deg); }
+    70% { transform: translate(5px, 5px) rotate(5deg); }
+    80% { transform: translate(0px, 0px) rotate(0deg); }
+    90% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes move {    
+    0% {
+        transform: translateY(160px) scale(0.1);   
+    }
+
+    100% {
+        transform: scale(1);       
+    }
+}  
